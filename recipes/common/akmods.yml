@@ -1,0 +1,7 @@
+# Installs X-Box controller drivers and an AMD Energy driver
+
+type: akmods
+install:
+  - xpadneo
+  - xone
+  - zenergy

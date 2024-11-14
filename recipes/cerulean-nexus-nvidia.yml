@@ -1,0 +1,18 @@
+# image will be published to ghcr.io/<user>/<name>
+name: cerulean-nexus-nvidia
+description: Opinionated Silverblue image with Hyprland & Gnome running on Ublue 41
+base-image: ghcr.io/ublue-os/silverblue-nvidia
+image-version: 41 
+
+modules:
+  - from-file: common/akmods.yml
+  # - from-file: common/bling.yml
+  # - from-file: common/rpm-ostree.yml
+  # - from-file: common/fonts.yml
+  # - from-file: common/files.yml
+  # - from-file: common/script.yml
+  # - from-file: common/systemd.yml
+  # - from-file: common/gschema-overrides.yml
+  # - from-file: common/default-flatpaks.yml
+
+  - type: signing
