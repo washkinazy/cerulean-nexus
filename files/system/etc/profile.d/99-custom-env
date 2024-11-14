@@ -1,0 +1,17 @@
+# Set default Qt platform to Kvantum
+export QT_STYLE_OVERRIDE="kvantum"
+export QT_QPA_PLATFORMTHEME="qt5ct"
+
+# Set default editor to Vim
+export EDITOR="vim"
+export VISUAL="vim"
+
+# # Set environment variables for Wayland support
+# export XDG_SESSION_TYPE="wayland"
+# export GDK_BACKEND="wayland"
+# export CLUTTER_BACKEND="wayland"
+# export SDL_VIDEODRIVER="wayland"
+# export QT_QPA_PLATFORM="wayland"
+
+# Ensure XWayland is used where necessary for compatibility
+# export XWAYLAND="1"

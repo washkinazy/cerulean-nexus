@@ -1,0 +1,128 @@
+modules:
+  - type: rpm-ostree
+    keys:
+      - https://packages.microsoft.com/keys/microsoft.asc
+    repos:
+      - https://cli.github.com/packages/rpm/gh-cli.repo
+      - https://packages.microsoft.com/yumrepos/vscode/config.repo
+      - https://download.docker.com/linux/fedora/docker-ce.repo
+      - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
+      # Universal Blue COPR
+      - https://copr.fedorainfracloud.org/coprs/ublue-os/staging/repo/fedora-%OS_VERSION%/ublue-os-staging-fedora-%OS_VERSION%.repo
+      # Hyprland Focused Repos
+      - https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/repo/fedora-%OS_VERSION%/solopasha-hyprland-fedora-%OS_VERSION%.repo
+
+    install:
+      - htop
+      - btop
+      - nmon
+      - fastfetch
+      - sysstat
+      - acpi
+      - bash-completion
+      - fish
+      - hplip
+      - system-config-printer
+      - system-config-printer-udev
+      - zenity
+      - kitty
+      - vulkan-loader
+      - vulkan-tools
+      - vulkan-validation-layers
+      - pipewire
+      - pipewire-alsa
+      - pipewire-gstreamer
+      - pipewire-pulseaudio
+      - pipewire-utils
+      - wireplumber
+      - pavucontrol
+      - thunar
+      - thunar-archive-plugin
+      - thunar-volman
+      - xarchiver
+      - unzip
+      - unrar
+      - p7zip
+      - p7zip-plugins
+      - zip
+      - bzip2
+      - gvfs-mtp
+      - gvfs-gphoto2
+      - gvfs-smb
+      - gvfs-nfs
+      - gvfs-fuse
+      - gvfs-archive
+      - trash-cli
+      - ffmpegthumbnailer
+      - tumbler
+      - kvantum
+      - kvantum-qt5
+      - adwaita-qt5
+      - vim
+      - just
+      - pipx
+      - solaar
+      - solaar-udev
+      - git
+      - gh
+      - code
+      - podman
+      - podman-compose
+      - docker-ce
+      - docker-ce-cli
+      - containerd.io
+      - docker-buildx-plugin
+      - docker-compose-plugin
+      - distrobox
+      - virt-manager
+      - virt-viewer
+      - virt-install
+      - libvirt
+      - libvirt-daemon-config-network
+      - libvirt-daemon-kvm
+      - qemu
+      - qemu-char-spice
+      - qemu-device-display-virtio-gpu
+      - qemu-device-display-virtio-vga
+      - qemu-device-usb-redirect
+      - qemu-img
+      - qemu-system-x86-core
+      - qemu-kvm
+      - qt5-qtwayland
+      - qt6-qtwayland
+      # Hyprland
+      - hyprland # A highly customizable dynamic tiling Wayland compositor that doesn't sacrifice on its looks.
+      - xdg-desktop-portal-hyprland # xdg-desktop-portal backend for Hyprland.
+      - hyprland-contrib # Community scripts and utilities for Hypr projects.
+      - hyprland-plugins # Official plugins for the hyprland package (installed in /usr/lib64/hyprland).
+      - hyprpicker # A wlroots-compatible Wayland color picker.
+      - hypridle # Hyprland's idle daemon.
+      - hyprlock # Hyprland's GPU-accelerated screen locking utility.
+      - hyprshot # A utility to easily take screenshots in Hyprland using your mouse.
+      - hyprnome # GNOME-like workspace switching in Hyprland.
+      - hyprdim # Automatically dim windows in Hyprland when switching between them.
+      - pyprland # Hyprland extensions.
+      - hyprpolkitagent # A polkit agent for Hyprland.
+      - cliphist
+      - wl-clipboard
+      - waybar
+      - waypaper
+      - kanshi
+      - wlsunset
+      - swaybg
+      - dunst
+      - nwg-clipman
+
+    remove:
+      - gnome-system-monitor
+      - gnome-tour
+      - gnome-classic-session
+      - desktop-backgrounds-gnome
+      - fedora-bookmarks
+      - fedora-chromium-config
+      - fedora-chromium-config-gnome
+      - fedora-workstation-backgrounds
+      - firefox
+      - firefox-langpacks
+      - toolbox
+      - yelp

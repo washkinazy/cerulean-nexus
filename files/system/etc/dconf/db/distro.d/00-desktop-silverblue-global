@@ -1,0 +1,18 @@
+# Relocatable schemas are located here in dconf
+# Some Gnome extensions don't ship gschema XML, so their settings also need to go in dconf
+
+# Keybindings
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0]
+binding='<Super><Enter>t'
+command='kitty'
+name='Terminal'
+
+# [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1]
+# binding='<Control><Alt>KP_Delete'
+# command='flatpak run io.missioncenter.MissionCenter'
+# name='Mission Center'
+
+# [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2]
+# binding='<Control><Shift>Escape'
+# command="flatpak run io.missioncenter.MissionCenter"
+# name='Mission Center'

@@ -47,10 +47,9 @@ If build on Fedora Atomic, you can generate an offline ISO with the instructions
 ```bash
 sudo docker run --rm --privileged \
     --volume ./iso-output:/build-container-installer/build \
-    --security-opt --pull=always \
     ghcr.io/jasonn3/build-container-installer:latest \
-    IMAGE_REPO=ghcr.io/washkinazy \
-    IMAGE_NAME=nerulean-nexus-nvidia \
+    IMAGE_REPO=localhost \
+    IMAGE_NAME=cerulean-nexus-nvidia \
     IMAGE_TAG=latest \
     VARIANT=Silverblue \
     ISO_NAME=generated-installer
