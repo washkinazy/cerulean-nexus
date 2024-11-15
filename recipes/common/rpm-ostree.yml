@@ -13,30 +13,34 @@ modules:
       - https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/repo/fedora-%OS_VERSION%/solopasha-hyprland-fedora-%OS_VERSION%.repo
 
     install:
+    # Utilities
       - topgrade
-      - htop
       - btop
+      - htop
       - nmon
       - fastfetch
-      - sysstat
-      - acpi
       - bash-completion
+      - bash-color-prompt
       - fish
+      - solaar
+      - solaar-udev
+      - kitty
+    # Printing
       - hplip
       - system-config-printer
       - system-config-printer-udev
       - zenity
-      - kitty
+    # Audio & Video
       - vulkan-loader
       - vulkan-tools
       - vulkan-validation-layers
       - pipewire
-      - pipewire-alsa
-      - pipewire-gstreamer
       - pipewire-pulseaudio
       - pipewire-utils
       - wireplumber
       - pavucontrol
+      - playerctl
+    # Thunar & File Management
       - thunar
       - thunar-archive-plugin
       - thunar-volman
@@ -54,16 +58,7 @@ modules:
       - gvfs-fuse
       - gvfs-archive
       - trash-cli
-      - ffmpegthumbnailer
-      - tumbler
-      - kvantum
-      - kvantum-qt5
-      - adwaita-qt5
-      - vim
-      - just
-      - pipx
-      - solaar
-      - solaar-udev
+    # Development
       - git
       - gh
       - code
@@ -74,13 +69,10 @@ modules:
       - containerd.io
       - docker-buildx-plugin
       - docker-compose-plugin
-      - distrobox
+    # Virtualization
       - virt-manager
       - virt-viewer
-      - virt-install
       - libvirt
-      - libvirt-daemon-config-network
-      - libvirt-daemon-kvm
       - qemu
       - qemu-char-spice
       - qemu-device-display-virtio-gpu
@@ -89,9 +81,7 @@ modules:
       - qemu-img
       - qemu-system-x86-core
       - qemu-kvm
-      - qt5-qtwayland
-      - qt6-qtwayland
-      # Hyprland
+    # Hyprland
       - hyprland # A highly customizable dynamic tiling Wayland compositor that doesn't sacrifice on its looks.
       - xdg-desktop-portal-hyprland # xdg-desktop-portal backend for Hyprland.
       - hyprland-contrib # Community scripts and utilities for Hypr projects.
@@ -112,13 +102,22 @@ modules:
       - wlsunset
       - swaybg
       - dunst
-      - nwg-clipman
+    # Theme Management
+      - kvantum
+      - kvantum-qt5
+      - adwaita-qt5
+      - qt5-qtwayland
+      - qt6-qtwayland
       - adw-gtk3-theme
       - pop-gtk2-theme
       - pop-gtk3-theme
       - pop-gtk4-theme
+    # Networking
+      - tailscale
 
     remove:
+      - desktop-backgrounds-gnome
+      - gnome-remote-desktop
       - gnome-system-monitor
       - gnome-tour
       - gnome-classic-session
@@ -136,5 +135,6 @@ modules:
       - fedora-workstation-backgrounds
       - firefox
       - firefox-langpacks
-      - toolbox
       - yelp
+      - nautilus-extensions
+      - nautilus
