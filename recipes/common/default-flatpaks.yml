@@ -10,6 +10,7 @@ modules:
         - io.github.flattool.Warehouse
         # - org.freedesktop.Platform.ffmpeg-full/x86_64/22.08
         # - org.freedesktop.Platform.openh264/x86_64/2.3.1
+        - com.mattjakeman.ExtensionManager
         - org.fedoraproject.MediaWriter
         - org.mozilla.firefox
         - com.google.Chrome
