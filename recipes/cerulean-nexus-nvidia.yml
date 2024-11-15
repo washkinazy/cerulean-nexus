@@ -1,8 +1,8 @@
 # image will be published to ghcr.io/<user>/<name>
 name: cerulean-nexus-nvidia
-description: Silverblue image with Gnome running on Ublue 41
-base-image: ghcr.io/ublue-os/silverblue
-image-version: 41
+description: Silverblue image with Nvidia drivers
+base-image: ghcr.io/ublue-os/silverblue-nvidia
+image-version: latest
 
 modules:
   - from-file: common/akmods.yml
@@ -13,45 +13,38 @@ modules:
   - from-file: common/gnome-extensions.yml
   - from-file: common/default-flatpaks.yml
   - from-file: common/rpm-ostree.yml
+  - from-file: common/systemd.yml
 
   - type: rpm-ostree
     install:
       - jstest-gtk
       - steam-devices
       - mangohud
-
-  - type: akmods
-    install:
-      - nvidia
   
   - type: justfiles
     validate: true
 
   - type: rpm-ostree
     remove:
-      - nwg-panel
-      - gnome-extensions-app
       - desktop-backgrounds-gnome
-      - gnome-remote-desktop
-      - gnome-system-monitor
-      - gnome-tour
-      - gnome-classic-session
+      - fedora-bookmarks
+      - fedora-chromium-config
+      - fedora-chromium-config-gnome
+      - fedora-flathub-remote
+      - fedora-workstation-backgrounds
+      - firefox
+      - firefox-langpacks
       - gnome-backgrounds
       - gnome-browser-connector
+      - gnome-classic-session
+      - gnome-extensions-app
       - gnome-shell-extension-apps-menu
       - gnome-shell-extension-background-logo
       - gnome-shell-extension-launch-new-instance
       - gnome-shell-extension-places-menu
       - gnome-shell-extension-window-list
       - gnome-software
-      - fedora-bookmarks
-      - fedora-chromium-config
-      - fedora-chromium-config-gnome
-      - fedora-workstation-backgrounds
-      - firefox
-      - firefox-langpacks
-      - yelp
-      - nautilus-extensions
-      - nautilus
+      - gnome-tour
+      - toolbox
 
   - type: signing

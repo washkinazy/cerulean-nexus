@@ -1,0 +1,9 @@
+modules:
+  - type: systemd
+    system:
+      enabled:
+        - docker
+    user:
+      enabled:
+        - podman.service
+        - podman.socket

@@ -7,57 +7,52 @@ modules:
       - https://packages.microsoft.com/yumrepos/vscode/config.repo
       - https://download.docker.com/linux/fedora/docker-ce.repo
       - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
-      # Universal Blue COPR
-      - https://copr.fedorainfracloud.org/coprs/ublue-os/staging/repo/fedora-%OS_VERSION%/ublue-os-staging-fedora-%OS_VERSION%.repo
-      # Hyprland Focused Repos
-      - https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/repo/fedora-%OS_VERSION%/solopasha-hyprland-fedora-%OS_VERSION%.repo
 
     install:
-      # Utilities
-      - topgrade
-      - btop
-      - htop
-      - nmon
-      - fastfetch
-      - bash-completion
-      - bash-color-prompt
-      - fish
-      - solaar
-      - solaar-udev
-      - kitty
-      # Printing
-      - hplip
-      - system-config-printer
-      - system-config-printer-udev
-      - zenity
-      # Audio & Video
-      - vulkan-loader
-      - vulkan-tools
-      - vulkan-validation-layers
-      - pipewire
-      - pipewire-pulseaudio
-      - pipewire-utils
-      - wireplumber
-      - pavucontrol
-      - playerctl
-      # Thunar & File Management
-      - thunar
-      - thunar-archive-plugin
-      - thunar-volman
-      - xarchiver
-      - unzip
-      - unrar
-      - p7zip
-      - p7zip-plugins
-      - zip
-      - bzip2
-      - gvfs-mtp
-      - gvfs-gphoto2
-      - gvfs-smb
-      - gvfs-nfs
-      - gvfs-fuse
-      - gvfs-archive
-      - trash-cli
+      # # Utilities
+      # - btop
+      # - htop
+      # - nmon
+      # - fastfetch
+      # - bash-completion
+      # - bash-color-prompt
+      # - fish
+      # - solaar
+      # - solaar-udev
+      # - kitty
+      # - zenity
+      # # Printing
+      # - hplip
+      # - system-config-printer
+      # - system-config-printer-udev
+      # # Audio & Video
+      # - vulkan-loader
+      # - vulkan-tools
+      # - vulkan-validation-layers
+      # - pipewire
+      # - pipewire-pulseaudio
+      # - pipewire-utils
+      # - wireplumber
+      # - pavucontrol
+      # - playerctl
+      # # Thunar & File Management
+      # - thunar
+      # - thunar-archive-plugin
+      # - thunar-volman
+      # - xarchiver
+      # - unzip
+      # - unrar
+      # - p7zip
+      # - p7zip-plugins
+      # - zip
+      # - bzip2
+      # - gvfs-mtp
+      # - gvfs-gphoto2
+      # - gvfs-smb
+      # - gvfs-nfs
+      # - gvfs-fuse
+      # - gvfs-archive
+      # - trash-cli
       # Development
       - git
       - gh
@@ -69,18 +64,18 @@ modules:
       - containerd.io
       - docker-buildx-plugin
       - docker-compose-plugin
-      # Virtualization
-      - virt-manager
-      - virt-viewer
-      - libvirt
-      - qemu
-      - qemu-char-spice
-      - qemu-device-display-virtio-gpu
-      - qemu-device-display-virtio-vga
-      - qemu-device-usb-redirect
-      - qemu-img
-      - qemu-system-x86-core
-      - qemu-kvm
+      # # Virtualization
+      # - virt-manager
+      # - virt-viewer
+      # - libvirt
+      # - qemu
+      # - qemu-char-spice
+      # - qemu-device-display-virtio-gpu
+      # - qemu-device-display-virtio-vga
+      # - qemu-device-usb-redirect
+      # - qemu-img
+      # - qemu-system-x86-core
+      # - qemu-kvm
       # # Hyprland
       # - hyprland # A highly customizable dynamic tiling Wayland compositor that doesn't sacrifice on its looks.
       # - xdg-desktop-portal-hyprland # xdg-desktop-portal backend for Hyprland.
@@ -103,14 +98,14 @@ modules:
       # - swaybg
       # - dunst
       # Theme Management
-      - kvantum
-      - kvantum-qt5
-      - adwaita-qt5
-      - qt5-qtwayland
-      - qt6-qtwayland
+      # - kvantum
+      # - kvantum-qt5
+      # - adwaita-qt5
+      # - qt5-qtwayland
+      # - qt6-qtwayland
       # - adw-gtk3-theme
       # - pop-gtk2-theme
       # - pop-gtk3-theme
       # - pop-gtk4-theme
       # Networking
-      - tailscale
+      # - tailscale

@@ -4,14 +4,6 @@ modules:
       nerd-fonts:
         - FiraCode
         - Iosevka
-        - Hack
         - SourceCodePro
         - JetBrainsMono
         - NerdFontsSymbolsOnly
-      google-fonts:
-        - Roboto
-
-  - type: rpm-ostree
-    install:
-      - adobe-source-code-pro-fonts
-      - fontawesome-fonts-all

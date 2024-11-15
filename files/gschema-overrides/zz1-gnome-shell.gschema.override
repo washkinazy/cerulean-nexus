@@ -32,7 +32,6 @@ old-files-age=5
 workspaces-only-on-primary=false
 check-alive-timeout=30000
 dynamic-workspaces=false
-center-new-windows=true
 
 [org.gnome.shell.app-switcher]
 current-workspace-only=true
