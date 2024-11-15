@@ -1,28 +1,23 @@
 modules:
   - type: rpm-ostree
-    repos:
-      # Universal Blue COPR
-      - https://copr.fedorainfracloud.org/coprs/ublue-os/staging/repo/fedora-%OS_VERSION%/ublue-os-staging-fedora-%OS_VERSION%.repo
-      
     install:
-      - gnome-shell-extension-appindicator
-      - gnome-shell-extension-auto-move-windows
-      - gnome-shell-extension-blur-my-shell
-      - gnome-shell-extension-caffeine
-      - gnome-shell-extension-dash-to-dock
-      - gnome-shell-extension-just-perfection
-      - gnome-shell-extension-launch-new-instance
-      - gnome-shell-extension-no-overview
-      - gnome-shell-extension-user-theme
       - gnome-shell-extension-pop-shell
       - gnome-pomodoro
-      # ublue managed extensions
-      - gnome-shell-extension-auto-power-profile
-      - gnome-shell-extension-power-profile-switcher
-      - gnome-shell-extension-tailscale-gnome-qs
 
   - type: gnome-extensions
     install:
-      - 5090 # Space Bar
-      - 7373 # Touchpad Toggle/Indicator
-      - 6358 # Disable workspace switcher animation overlay
+      - 5090  # Space Bar
+      - 7373  # Touchpad Toggle/Indicator
+      - 6358  # Disable workspace switcher animation overlay
+      - 6139  # Tailscale Gnome QS 
+      - 19    # User Themes
+      - 4099  # No Overview
+      - 600   # Launch New Instance
+      - 3843  # Just Perfection
+      - 3193  # Blur my Shell
+      - 16    # Auto Move Windows
+      - 615   # App Indicator
+      - 517   # Caffeine
+      # No schema and UBlue repo has a stale version
+      # - 6583  # Auto Power Profile
+      # - 5575  # Power Profile Switcher
