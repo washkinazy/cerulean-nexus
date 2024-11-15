@@ -1,5 +1,5 @@
 # image will be published to ghcr.io/<user>/<name>
-name: cerulean-nexus
+name: cerulean-nexus-nvidia
 description: Opinionated Silverblue image with Hyprland & Gnome running on Ublue 41
 base-image: ghcr.io/ublue-os/silverblue-nvidia
 image-version: 41
