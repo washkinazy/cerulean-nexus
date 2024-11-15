@@ -81,36 +81,36 @@ modules:
       - qemu-img
       - qemu-system-x86-core
       - qemu-kvm
-      # Hyprland
-      - hyprland # A highly customizable dynamic tiling Wayland compositor that doesn't sacrifice on its looks.
-      - xdg-desktop-portal-hyprland # xdg-desktop-portal backend for Hyprland.
-      - hyprland-contrib # Community scripts and utilities for Hypr projects.
-      - hyprland-plugins # Official plugins for the hyprland package (installed in /usr/lib64/hyprland).
-      - hyprpicker # A wlroots-compatible Wayland color picker.
-      - hypridle # Hyprland's idle daemon.
-      - hyprlock # Hyprland's GPU-accelerated screen locking utility.
-      - hyprshot # A utility to easily take screenshots in Hyprland using your mouse.
-      - hyprnome # GNOME-like workspace switching in Hyprland.
-      - hyprdim # Automatically dim windows in Hyprland when switching between them.
-      - pyprland # Hyprland extensions.
-      - hyprpolkitagent # A polkit agent for Hyprland.
-      - cliphist
-      - wl-clipboard
-      - waybar
-      - waypaper
-      - kanshi
-      - wlsunset
-      - swaybg
-      - dunst
+      # # Hyprland
+      # - hyprland # A highly customizable dynamic tiling Wayland compositor that doesn't sacrifice on its looks.
+      # - xdg-desktop-portal-hyprland # xdg-desktop-portal backend for Hyprland.
+      # - hyprland-contrib # Community scripts and utilities for Hypr projects.
+      # - hyprland-plugins # Official plugins for the hyprland package (installed in /usr/lib64/hyprland).
+      # - hyprpicker # A wlroots-compatible Wayland color picker.
+      # - hypridle # Hyprland's idle daemon.
+      # - hyprlock # Hyprland's GPU-accelerated screen locking utility.
+      # - hyprshot # A utility to easily take screenshots in Hyprland using your mouse.
+      # - hyprnome # GNOME-like workspace switching in Hyprland.
+      # - hyprdim # Automatically dim windows in Hyprland when switching between them.
+      # - pyprland # Hyprland extensions.
+      # - hyprpolkitagent # A polkit agent for Hyprland.
+      # - cliphist
+      # - wl-clipboard
+      # - waybar
+      # - waypaper
+      # - kanshi
+      # - wlsunset
+      # - swaybg
+      # - dunst
       # Theme Management
       - kvantum
       - kvantum-qt5
       - adwaita-qt5
       - qt5-qtwayland
       - qt6-qtwayland
-      - adw-gtk3-theme
-      - pop-gtk2-theme
-      - pop-gtk3-theme
-      - pop-gtk4-theme
+      # - adw-gtk3-theme
+      # - pop-gtk2-theme
+      # - pop-gtk3-theme
+      # - pop-gtk4-theme
       # Networking
       - tailscale

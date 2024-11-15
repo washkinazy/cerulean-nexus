@@ -1,7 +1,7 @@
 # image will be published to ghcr.io/<user>/<name>
 name: cerulean-nexus-nvidia
-description: Opinionated Silverblue image with Hyprland & Gnome running on Ublue 41
-base-image: ghcr.io/ublue-os/silverblue-nvidia
+description: Silverblue image with Gnome running on Ublue 41
+base-image: ghcr.io/ublue-os/silverblue
 image-version: 41
 
 modules:
@@ -20,6 +20,10 @@ modules:
       - steam-devices
       - mangohud
 
+  - type: akmods
+    install:
+      - nvidia
+  
   - type: justfiles
     validate: true
 
