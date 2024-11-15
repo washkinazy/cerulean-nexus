@@ -26,6 +26,9 @@ modules:
   #     - steam-devices
   #     - mangohud
 
+  - type: justfiles
+    validate: true
+
   - type: rpm-ostree
     remove: 
       - nvtop

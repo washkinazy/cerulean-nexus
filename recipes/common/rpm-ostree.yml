@@ -113,6 +113,10 @@ modules:
       - swaybg
       - dunst
       - nwg-clipman
+      - adw-gtk3-theme
+      - pop-gtk2-theme
+      - pop-gtk3-theme
+      - pop-gtk4-theme
 
     remove:
       - gnome-system-monitor

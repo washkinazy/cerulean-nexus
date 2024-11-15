@@ -5,22 +5,6 @@
     - https://github.com/DimaZirix/fedora-gdm-wallpaper
     - Check ublue patterns
 
-[] Move the following out of config and into base image
-
-```text
-# System Icons and Themes
-system_themes:
-  - adw-gtk3-theme
-  - pop-gtk2-theme
-  - pop-gtk3-theme
-  - pop-gtk4-theme
-
-system_icons:
-  - papirus-icon-theme
-  - papirus-icon-theme-dark
-  - numix-icon-theme
-  - numix-icon-theme-square
-```
 [] Move relevant custom JUST tasks out of this repo
 
 ### Themeing
