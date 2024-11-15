@@ -10,6 +10,31 @@ modules:
         - io.github.flattool.Warehouse
         # - org.freedesktop.Platform.ffmpeg-full/x86_64/22.08
         # - org.freedesktop.Platform.openh264/x86_64/2.3.1
+        - org.fedoraproject.MediaWriter
+        - org.mozilla.firefox
+        - com.google.Chrome
+        - org.torproject.torbrowser-launcher
+        - io.missioncenter.MissionCenter
+        - it.mijorus.gearlever
+        - com.spotify.Client
+        - com.slack.Slack
+        - ca.desrt.dconf-editor
+        - org.inkscape.Inkscape
+        - org.gimp.GIMP
+        - com.rawtherapee.RawTherapee
+        - org.libreoffice.LibreOffice
+        - md.obsidian.Obsidian
+        - org.gnome.Calculator
+        - org.gnome.Calendar
+        - org.gnome.Characters
+        - org.gnome.FontManager
+        - org.gnome.TextEditor
+        - org.gnome.Weather
+        - com.github.johnfactotum.Foliate
+        - org.ferdium.Ferdium
+        - io.podman_desktop.PodmanDesktop
+        - io.github.dvlv.boxbuddyrs
+
     user:
       repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
       repo-name: flathub

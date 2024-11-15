@@ -14,20 +14,19 @@ modules:
   - from-file: common/default-flatpaks.yml
   - from-file: common/rpm-ostree.yml
 
-  # - type: akmods
-  #   install:
-  #     - ryzen-smu
-  #     - xone
-  #     - xpadneo
-
-  # - type: rpm-ostree
-  #   install:
-  #     - jstest-gtk
-  #     - steam-devices
-  #     - mangohud
+  - type: akmods
+    install:
+      - ryzen-smu
+      - xone
+      - xpadneo
 
   - type: rpm-ostree
-    remove: 
-      - nvtop
+    install:
+      - jstest-gtk
+      - steam-devices
+      - mangohud
+
+  - type: justfiles
+    validate: true
 
   - type: signing
