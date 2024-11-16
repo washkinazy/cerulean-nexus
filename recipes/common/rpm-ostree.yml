@@ -21,6 +21,7 @@ modules:
       - solaar-udev
       - kitty
       - zenity
+      - ansible
       # Printing
       - hplip
       - system-config-printer
