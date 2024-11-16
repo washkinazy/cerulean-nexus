@@ -46,6 +46,5 @@ modules:
       - gnome-software
       - gnome-tour
       - toolbox
-      - nautilus
 
   - type: signing
