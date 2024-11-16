@@ -36,6 +36,7 @@ modules:
       - wireplumber
       - pavucontrol
       - playerctl
+      - libmediainfo
       # Thunar & File Management
       - thunar
       - thunar-archive-plugin
