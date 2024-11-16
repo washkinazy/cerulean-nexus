@@ -3,16 +3,11 @@
 
 # Keybindings
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0]
-binding='<Super><Enter>t'
+binding='<Super><Enter>'
 command='kitty'
 name='Terminal'
 
-# [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1]
-# binding='<Control><Alt>KP_Delete'
-# command='flatpak run io.missioncenter.MissionCenter'
-# name='Mission Center'
-
-# [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2]
-# binding='<Control><Shift>Escape'
-# command="flatpak run io.missioncenter.MissionCenter"
-# name='Mission Center'
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1]
+binding='<Control><Shift>Escape'
+command="flatpak run io.missioncenter.MissionCenter"
+name='Mission Center'

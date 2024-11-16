@@ -2,7 +2,7 @@ modules:
   - type: rpm-ostree
     install:
       - gnome-shell-extension-pop-shell
-      - gnome-pomodoro
+      # - gnome-pomodoro
 
   - type: gnome-extensions
     install:

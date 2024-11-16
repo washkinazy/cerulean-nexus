@@ -13,42 +13,32 @@ modules:
   - from-file: common/gnome-extensions.yml
   - from-file: common/default-flatpaks.yml
   - from-file: common/rpm-ostree.yml
-
-  - type: rpm-ostree
-    install:
-      - jstest-gtk
-      - steam-devices
-      - mangohud
+  - from-file: common/systemd.yml
 
   - type: justfiles
     validate: true
 
   - type: rpm-ostree
     remove:
-      - nwg-panel
-      - gnome-extensions-app
       - desktop-backgrounds-gnome
-      - gnome-remote-desktop
-      - gnome-system-monitor
-      - gnome-tour
-      - gnome-classic-session
+      - fedora-bookmarks
+      - fedora-chromium-config
+      - fedora-chromium-config-gnome
+      - fedora-flathub-remote
+      - fedora-workstation-backgrounds
+      - firefox
+      - firefox-langpacks
       - gnome-backgrounds
       - gnome-browser-connector
+      - gnome-classic-session
+      - gnome-extensions-app
       - gnome-shell-extension-apps-menu
       - gnome-shell-extension-background-logo
-      - gnome-shell-extension-common
       - gnome-shell-extension-launch-new-instance
       - gnome-shell-extension-places-menu
       - gnome-shell-extension-window-list
       - gnome-software
-      - fedora-bookmarks
-      - fedora-chromium-config
-      - fedora-chromium-config-gnome
-      - fedora-workstation-backgrounds
-      - firefox
-      - firefox-langpacks
-      - yelp
-      - nautilus-extensions
-      - nautilus
+      - gnome-tour
+      - toolbox
 
   - type: signing

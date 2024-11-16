@@ -1,18 +1,20 @@
+# Clean all containers, images, volumes, and networks
 clean-containers:
     #!/usr/bin/bash
-    # Podman cleanup
+    echo "Cleanuing podman containers and images..."
     podman image prune -af
     podman volume prune -f
 
-    # Docker cleanup
-    docker system prune -af        # Removes all unused images, containers, networks
-    docker volume prune -f         # Removes all unused Docker volumes
-    docker network prune -f        # Removes all unused Docker networks
+    echo "Cleaning docker containers, images, volumes, and networks..."
+    docker system prune -af
+    docker volume prune -f 
+    docker network prune -f 
 
+# Recursively pull all git repositories in the current directory
 refresh-repos:
     #!/bin/bash
-    @echo "Starting git pull in all directories one level down..."
-    @for dir in */; do \
+    echo "Starting git pull in all directories one level down..."
+    for dir in */; do \
         if [ -d "$dir/.git" ]; then \
             echo "Entering directory: $dir"; \
             (cd "$dir" && echo "Performing git pull in $dir" && git pull); \
@@ -21,4 +23,4 @@ refresh-repos:
             echo "Skipping $dir (not a git repository)"; \
         fi; \
     done
-    @echo "Git pull completed in all git repositories."
+    echo "Git pull completed in all git repositories."

@@ -2,5 +2,4 @@ modules:
   - type: gschema-overrides
     include:
       - zz1-gnome-shell.gschema.override
-      - zz1-gnome-software.gschema.override
       - zz1-gtk-settings.gschema.override
